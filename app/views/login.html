@@ -1,0 +1,24 @@
+<div class="row col-lg-offset-4 col-lg-4" ng-hide="userIsLoggedIn" ng-controller="LoginCtrl">
+    <span class="alert-txt">{{errMsg}}</span>
+	<form ng-submit="login()" ng-controller="LoginCtrl" role="form" ">
+  
+	<div class="form-group">
+    <label>username</label>
+    <input type="text" name="username" ng-model="username" required="required" style="width:100%" class="form-control"/>
+  </div>
+	
+<div class="form-group">
+    <label>password</label>
+    <input type="password" name="pwd" ng-model="pwd" required="required" class="form-control"/>
+  </div>
+
+	<div class="form-group">
+    <label>email</label>
+    <input type="email" name="email" ng-model="email" required="required" class="form-control"/>
+  </div>
+ 
+  
+ 
+  <button type="submit" class="btn btn-primary btn-lg">Sign in</button>
+</form>
+</div>

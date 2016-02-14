@@ -1,0 +1,19 @@
+ <div ng-controller="AboutCtrl">
+ <div class="row col-lg-12">
+    <button ng-click="$storage.x = $storage.x + 1">{{$storage.x}}</button> + <button ng-click="$storage.y = $storage.y + 1">{{$storage.y}}</button> = {{$storage.x + $storage.y}}
+		
+		<p>
+		<form class="form-inline">
+		aa<input type="text" id="name" class="form-control" ng-model="$storage.name" value="{{$storage.name}}" style="width:2O0px"/>
+<p><input type="text" id="company" class="form-control" ng-model="$storage.company" value="{{$storage.company}}" style="width:2O0px"/>
+	</p>	<input type="radio" id="completed" class="form-control" ng-model="$storage.completed"  ng-value="{{$storage.completed}}"  style="width:2O0px"/>
+		   <input type="submit" class="btn btn-primary"/>
+		</form>
+		</p>
+		<span>{{$storage.name}}   --  {{$storage.completed}}</span>
+		</div>
+  </div>
+	  <div ng-controller = "FilecontrolCtrl">
+         <input type = "file" file-model = "myFile"/>
+						qq<button ng-click = "uploadFile()">upload me</button>
+      </div>

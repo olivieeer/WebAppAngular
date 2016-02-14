@@ -1,0 +1,44 @@
+<header class="row">
+      
+</header>
+<section class="row col-lg-12" ng-controller="TodoCtrl">
+	<div class="col-lg-offset-4 col-lg-4">	
+		
+		<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading text-center"><h1>Todo List Panel</h1>
+	<form id="todo-form" ng-submit="addTodo()" class="text-center form-group">
+				<input id="new-todo" placeholder="Que devez-vous faire ?" ng-model="newTodo" class="form-control" autofocus/>
+				<button type="submit" class="btn btn-primary" class="form-control">Ajouter une tâche</button>
+		</form>
+	</div>
+	 <div class="panel-body">
+		<article ng-show="$storage.todos.length">
+			<br />
+			
+				<ul id="todo-list" class="list-group">
+						<li ng-repeat="todo in $storage.todos" ng-animate="'animate'" class="list-group-item" ng-class="{completed: todo.completed}">
+								<div class="view">
+										<input class="mark" type="checkbox" ng-model="todo.completed" />
+										<span>{{todo.title}}</span>
+										<span class="close" ng-click="removeTodo(todo)">x</span>
+								</div>
+						</li>
+					
+				</ul>
+				<label  for="mark-all">Tout cocher</label>
+				<input id="mark-all" type="checkbox" ng-model="allChecked" ng-click="markAll(allChecked)" />&nbsp;
+				&nbsp;<button class="btn btn-danger" ng-click="clearCompletedTodos()">Supprimer les tâches cochées</button>
+		</article>
+	</div>	
+	 <div class="panel-footer text-center">Panel footer</div>
+	</div>
+	</div>
+	
+	
+ 
+    
+  </div>
+	
+	
+</section>

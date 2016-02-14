@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/ng-auth/dist/oauth2.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main1.css">
+		<link rel="stylesheet" href="styles/main2.css">
+      	 <style type="text/css">
+        body { background-color:#DDD; }
+        [class*="col"] { margin-bottom: 20px; }
+        img 
+				{ 
+					width: 100%; 
+				}
+				#yeoman
+				{
+					width: 103px;
+					height: 89px;
+				}
+				#task
+				{
+					width: 128px;
+					height: 128px;
+				}
+				.block{
+					display: block;
+				}
+        .well {
+          background-color:#CCC;
+          padding: 20px;
+        }
+         [class*="col-"], footer {
+					/*background-color: #E2BC74;*/
+          border: 2px solid black;
+          border-radius: 6px;
+          line-height: 40px; 
+        }
+
+        .full button span {
+          background-color: limegreen;
+          border-radius: 32px;
+          color: black;
+        }
+        .partially button span {
+          background-color: green;
+          border-radius: 32px;
+          color: black;
+        }
+
+        #eventForm .form-control-feedback {
+          top: 0;
+          right: -15px;
+        }
+
+        label, input { display: inline-block; }
+        input.text { margin-bottom:12px; width:95%; padding: .4em; }
+        fieldset { padding:0; border:0; margin-top:25px; }
+        h1 { font-size: 1.2em; margin: .6em 0; }
+        div#users-contain { width: 350px; margin: 20px 0; }
+        div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 50%; }
+        div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+        .ui-dialog .ui-state-error { padding: .3em; }
+        .validateTips { border: 1px solid transparent; padding: 0.3em; } 
+
+
+      </style>
+  </head>
+  <body ng-app="app">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+		 <div class="header">
+        <nav class="navbar navbar-inverse" >
+          <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">WebSiteName</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#/main">Home</a></li>
+                  <li><a ng-href="#/about">About</a></li>    
+                  <li><a href="#/suggestions">Suggestions</a></li>
+                  <li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Javascript
+										<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+												<li><a ng-href="#/javascript">Javascript</a></li>
+												<li><a ng-href="#/nodejs">Node.js</a></li>
+										</ul>
+                  </li>
+									<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">AngularJs
+										<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+												<li><a ng-href="#/angularjs">AngularJs</a></li>
+												<li><a ng-href="#/todolist">Todolist</a></li>
+												<li><a ng-href="#/carousel">Carousel</a></li>
+												<li><a ng-href="#/animations">Animations</a></li>
+										<li><a ng-href="#/craEcranB">Cra</a></li>
+										</ul>
+									</li> 
+                  <li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Developpement
+										<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+												<li><a ng-href="#/developpementweb">Developpement web</a></li>
+												<li><a ng-href="#/jquery">JQuery</a></li>
+												<li><a ng-href="#/html">Html5</a></li>
+												<li><a ng-href="#/css">CSS3</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap
+										<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+												<li><a ng-href="#/bootstrap">Bootstrap</a></li>
+												<li><a ng-href="#/bootstrapexemple">bootstrap Exemple</a></li>
+										</ul>
+									</li> 
+									<li><a href="#/contact">Contact</a></li> 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="#/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          </div>
+    <div class="container-fluid">
+    <div ng-view=""></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+   <!--   <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script> -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/fetch/fetch.js"></script>
+    <script src="bower_components/es6-promise/promise.js"></script>
+    <script src="bower_components/ng-auth/dist/ng-auth.js"></script>
+    <script src="bower_components/ng-cookies/dist/ng-cookies.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/developpementweb.js"></script>
+        <script src="scripts/controllers/java.js"></script>
+        <script src="scripts/controllers/html.js"></script>
+        <script src="scripts/controllers/css.js"></script>
+        <script src="scripts/controllers/jquery.js"></script>
+        <script src="scripts/controllers/bootstrap.js"></script>
+        <script src="scripts/controllers/bootstrapexemple.js"></script>
+        <script src="scripts/controllers/todolist.js"></script>
+        <script src="scripts/controllers/carousel.js"></script><!-- 
+        <script src="scripts/services/jsonservice.js"></script> -->
+        <script src="scripts/directives/modal.js"></script>
+        <script src="scripts/controllers/animations.js"></script>
+        <script src="scripts/controllers/storage.js"></script>
+        <script src="scripts/directives/filemodel.js"></script>
+        <script src="scripts/services/fileupload.js"></script>
+        <script src="scripts/controllers/filecontrol.js"></script>
+
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/register.js"></script>
+        <script src="scripts/services/authservices.js"></script>
+        <script src="scripts/services/authappservices.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

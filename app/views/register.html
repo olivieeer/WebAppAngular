@@ -1,0 +1,103 @@
+<!-- <div class="row col-lg-offset-4 col-lg-4">
+	<form ng-submit="submitRegistration(registrationForm)" ng-controller="RegisterCtrl" role="form" ng-init="registrationForm = {}">
+		<div class="form-group">
+			<label>email</label>
+			<input type="email" name="email" ng-model="registrationForm.email" required="required" class="form-control"/>
+		</div>
+	 
+		<div class="form-group">
+			<label>password</label>
+			<input type="password" name="password" ng-model="registrationForm.password" required="required" class="form-control"/>
+		</div>
+	 
+		<div class="form-group">
+			<label>password confirmation</label>
+			<input type="password" name="password_confirmation" ng-model="registrationForm.password_confirmation" required="required" class="form-control"/>
+		</div>
+	 
+		<button type="submit" class="btn btn-primary btn-lg">Register</button>
+	</form>
+</div> -->
+<br>
+   <div class="row" ng-controller="RegisterCtrl as ctrl">
+          <div class="panel panel-default">
+              <div class="panel-heading"><span class="lead">User Registration Form </span></div>
+              <div class="formcontainer">
+                  <form ng-submit="ctrl.submit()" name="myForm" class="well col-lg-offset-3 col-lg-6">
+                      <input type="hidden" ng-model="ctrl.user.id" />
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-labeL" for="uname">Name</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="ctrl.user.username" id="uname" class="username form-control input-lg" placeholder="Enter your name" style="width:100%" required ng-minlength="3"/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.uname.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.uname.$error.minlength">Minimum length required is 3</span>
+                                      <span ng-show="myForm.uname.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                         
+                       
+                      <div class="row">
+                          <div class="form-group col-md-12 col-lg-&é">
+                              <label class="col-md-2 control-labeL" for="pwd">Address</label>
+                              <div class="col-md-7 col-lg-7">
+                                  <input type="password" ng-model="ctrl.user.pwd" id="pwd" class="form-control input-lg" placeholder="Enter your password." style="width:100%" />
+                              </div>
+                          </div>
+                      </div>
+ 
+                      <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="email">Email</label>
+                              <div class="col-md-7">
+                                  <input type="email" ng-model="ctrl.user.email" id="email" class="email form-control input-lg" placeholder="Enter your Email" required/>
+                                  <div class="has-error" ng-show="myForm.$dirty">
+                                      <span ng-show="myForm.email.$error.required">This is a required field</span>
+                                      <span ng-show="myForm.email.$invalid">This field is invalid </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+ 
+                      <div class="row">
+                          <div class="form-actions floatRight">
+                              <input type="submit"  value="{{!ctrl.user.id ? 'Add' : 'Update'}}" class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid">
+                              <button type="button" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+				</div>
+				<div class="row" ng-controller="RegisterCtrl as ctrl">
+          <div class="panel panel-default block">
+                <!-- Default panel contents -->
+              <div class="panel-heading"><span class="lead">List of Users </span></div>
+              <div class="tablecontainer">
+                  <table class="table table-hover">
+                      <thead>
+                          <tr>
+                              <th>ID.</th>
+                              <th>Name</th>
+                              <th>Address</th>
+                              <th>Email</th>
+                              <th width="100">
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr ng-repeat="u in $storage.users">
+                              <td><span ng-bind="u.id"></span></td>
+                              <td><span ng-bind="u.username"></span></td>
+                              <td><span ng-bind="u.address"></span></td>
+                              <td><span ng-bind="u.email"></span></td>
+                              <td>
+                              <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>  <button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+				</div>
