@@ -1,0 +1,13 @@
+Pour installer WebAppAngular,
+
+dans un shell
+faire un git clone https://github.com/olivieeer/WebAppAngular.git  dans un repertoire,
+
+faire un cd dans le repertoire, puis
+
+npm install
+et 
+bower install
+puis 
+grunt serve
+
