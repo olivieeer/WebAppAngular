@@ -19,22 +19,22 @@
         body { background-color:#DDD; }
         [class*="col"] { margin-bottom: 20px; }
         img 
-				{ 
-					width: 100%; 
-				}
-				#yeoman
-				{
-					width: 103px;
-					height: 89px;
-				}
-				#task
-				{
-					width: 128px;
-					height: 128px;
-				}
-				.block{
-					display: block;
-				}
+        { 
+            width: 100%; 
+        }
+        #yeoman
+        {
+            width: 103px;
+            height: 89px;
+        }
+        #task
+        {
+            width: 128px;
+            height: 128px;
+        }
+        .block{
+            display: block;
+        }
         .well {
           background-color:#CCC;
           padding: 20px;
@@ -61,7 +61,128 @@
           top: 0;
           right: -15px;
         }
-
+.vcenter 
+					{
+							display: inline-block;
+							vertical-align: top;
+							float: none;
+					}
+					
+					.carousel 
+					{
+						margin-bottom: 20px;
+						margin-top: 0px;
+						position: relative;
+						width: 100%;
+						overflow: hidden;
+						height: auto;
+					}
+			
+					.carousel-inner 
+					{
+						border: 5px solid white;
+						box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+						position: relative;
+						width: 100%;
+						overflow: hidden;
+						height: auto;
+					}
+					
+					.carousel-inner > .item {
+						position: relative;
+						-webkit-transition: .6s ease-in-out left;
+						-o-transition: .6s ease-in-out left;
+						transition: .6s ease-in-out left;
+					}
+						
+					.carousel-inner > .active,
+					.carousel-inner > .next,
+					.carousel-inner > .prev 
+					{
+						display: block;
+					}
+					.carousel-inner > .active 
+					{
+						left: 0;
+					}
+					.carousel-inner > .next,
+					.carousel-inner > .prev 
+					{
+						position: absolute;
+						top: 0;
+						width: 100%;
+					}
+					.carousel-inner > .next 
+					{
+						left: 100%;
+					}
+					.carousel-inner > .prev 
+					{
+						left: -100%;
+					}
+					.carousel-inner > .next.left,
+					.carousel-inner > .prev.right 
+					{
+						left: 0;
+					}
+					.carousel-inner > .active.left 
+					{
+						left: -100%;
+					}
+					.carousel-inner > .active.right 
+					{
+						left: 100%;
+					}
+					.well
+					{
+						background-color: rgba(255,255,255,0.4); 				
+					}
+				}
+				
+				
+				
+				/**********************************************************/
+				@media (min-width: 992px) {
+				
+					.carousel-caption h1 
+					 {
+						margin-bottom: 20px;
+						font-size: 40px;
+						line-height: 1.4;
+					}
+					
+					ul.nav.navbar-nav li a
+					{
+						text-align: left;
+						display: inline-block;
+					}
+				}
+				
+				/**********************************************************/ 
+				@media (max-width: 992px) {
+				
+					ul.nav.navbar-nav li a
+					{
+						text-align: left;
+						display:block;
+					}
+					
+					ul.nav.navbar-nav li a:hover
+					{
+						background-color:#696969;
+					}
+					
+					.carousel-caption h1 
+				 {
+					margin-bottom: 20px;
+					font-size: 21px;
+					line-height: 1.4;
+				 }
+				 a h4 {
+					width:100%;
+					text-align: center;
+				 }
+				}
         label, input { display: inline-block; }
         input.text { margin-bottom:12px; width:95%; padding: .4em; }
         fieldset { padding:0; border:0; margin-top:25px; }

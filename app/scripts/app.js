@@ -28,6 +28,7 @@ angular
 		'AuthServices',
 		'AuthAppServices',
 		'contact',
+    'carousel'
 
   ])
   .config(function ($routeProvider) {
