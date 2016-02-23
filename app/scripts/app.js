@@ -16,19 +16,25 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-		'ngAnimate',		
+    'ngAnimate',
+    'ngScrollbar',
+    'ui.date',
+    'ui.bootstrap',
     'todoList',
-		'main',
-		'mymodal',
-		'animations',
-		'ngStorage',
-		'about',
-		'register',
-		'login',
-		'AuthServices',
-		'AuthAppServices',
-		'contact',
-    'carousel'
+    'main',
+    'mymodal',
+    'animations',
+    'ngStorage',
+    'about',
+    'register',
+    'login',
+    'AuthServices',
+    'AuthAppServices',
+    'contact',
+    'carousel',
+    'accordion',
+    'angularjs',
+    'datepicker'
 
   ])
   .config(function ($routeProvider) {
@@ -128,8 +134,13 @@ angular
         controller: 'RegisterCtrl',
         controllerAs: 'register'
       })
+      .when('/accordion', {
+        templateUrl: 'views/accordion.html',
+        controller: 'AccordionCtrl',
+        controllerAs: 'accordion'
+      })
       .otherwise({
         redirectTo: '/'
       });
   })
-	;
+  ;

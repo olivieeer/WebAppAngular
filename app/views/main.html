@@ -1,64 +1,70 @@
 <div class="jumbotron" ng-controller="MainCtrl" ng-init="showModal = false">
-  <h2>Olive</h2>
-  <p class="lead">
-    <img src="images/yeoman.png" id="yeoman" alt="I'm Yeoman"><br>
-    Always a pleasure developping a Web App.
-  </p>
-  <p><button class="btn btn-lg btn-success" ng-click="toggleModal()">Cool!<span class="glyphicon glyphicon-ok"></span></button></p>
-	<br>
-	<button ng-click="toggleModal()" class="btn btn-default">Open modal<span class="glyphicon glyphicon-ok"></span></button>
-	
-	
-	<modal title="Login form" visible="showModal">
-		<div>
-			<div class="modal-dialog">  
-				<div class="modal-content">
-					<form role="form">
-						<div class="form-group">
-							<label for="email">Email address</label>
-							<input type="email" class="form-control" id="email" placeholder="Enter email" />
-						</div>
-						<div class="form-group">
-							<label for="password">Password</label>
-							<input type="password" class="form-control" id="password" placeholder="Password" />
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
-				</div>
-			</div>  
-		</div> 
-  </modal>
-	
+    <h2>Olive</h2>
+    <p class="lead">
+        <img src="images/yeoman.png" id="yeoman" alt="I'm Yeoman">
+        <br>Always a pleasure developping a Web App.
+    </p>
+    <p>
+        <button class="btn btn-lg btn-success" ng-click="openAside('left');">Cool!<span class="glyphicon glyphicon-ok"></span>
+        </button>
+    </p>
+    <br>
+    <button ng-click="toggleModal()" class="btn btn-default">Open modal<span class="glyphicon glyphicon-ok"></span>
+    </button>
+    <span class="pull-left">
+            <button type="button" class="btn btn-default btn-lg" ng-click="openAside('left', true)">
+              <span class="glyphicon glyphicon-align-justify"></span> Left
+    </button>
+    <button type="button" class="btn btn-default btn-lg" ng-click="openAside('top', true)">
+        Up <span class="glyphicon glyphicon-arrow-down"></span>
+    </button>
+    </span>
+    <modal title="Login form" visible="showModal">
+        <div>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </modal>
 </div>
 <!-- ######################################################################### -->
 <div class="row marketing">
-  <h4>Yeoman</h4>
-		<p>
-			Yeoman is a professional generator for building fast, robust, and adaptable web apps or sites.
-		</p>
-	<h4>Bootstrap</h4>
-		<p>
-			Bootstrap is a professional front-end template  <a href="http://getbootstrap.com/components/">Bootstrap components</a>
-		</p>	
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-	<h4>HTML5, CSS3</h4>
-	<ul>
-		<li>
-			<p><a href="http://www.startyourdev.com/">Tutoriel StartYourDev</a></p>
-		</li>
-		<li>
-			<p><a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3">Tutoriel Openclassrooms</a></p>
-		</li>
-	</ul>
-	
-	
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-	
-	
+    <h4>Yeoman</h4>
+    <p>
+        Yeoman is a professional generator for building fast, robust, and adaptable web apps or sites.
+    </p>
+    <h4>Bootstrap</h4>
+    <p>
+        Bootstrap is a professional front-end template <a href="http://getbootstrap.com/components/">Bootstrap components</a>
+    </p>
+    <h4>Angular</h4>
+    <p>
+        AngularJS is a toolset for building the framework most suited to your application development.
+    </p>
+    <h4>HTML5, CSS3</h4>
+    <ul>
+        <li>
+            <p><a href="http://www.startyourdev.com/">Tutoriel StartYourDev</a>
+            </p>
+        </li>
+        <li>
+            <p><a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3">Tutoriel Openclassrooms</a>
+            </p>
+        </li>
+    </ul>
+    <h4>Karma</h4>
+    <p>Spectacular Test Runner for JavaScript.</p>
 </div>
 <!-- ######################################################################### -->

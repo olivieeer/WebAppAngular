@@ -11,7 +11,7 @@
  /**
  * Déclaration du module todoList
  */
-var angularjs = angular.module('angularjs',[]);
+var angularjs = angular.module('angularjs',['ngScrollbar']);
 
 
 /**
