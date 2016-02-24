@@ -1,0 +1,36 @@
+<div ng-controller="AccordionCtrl">
+    <div class="page-header">
+        <h1 class="text-center">
+            HTML5 input fields <small>with description</small>
+        </h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="accordion__container" ng-controller="AccordionCtrl">
+                    <div ng-repeat="item in activeTabs">
+                        <div class="accordion__tab">
+                            <div class="accordion__tab-title" ng-click="openTab($index)">
+                                <strong>{{item.title}}</strong>
+                            </div>
+                            <div class="accordion__tab-content" ng-show="isOpenTab($index)">{{item.content}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" ng-controller="DatepickerCtrl">
+                <h4>Datepicker Popup</h4>
+                <br />
+                <div class="input-group col-xs-6 col-md-2 col-lg-4 date" data-date-format="dd/mm/yyyy"  data-provide="datepicker" id="ass">
+                    <input type="text" class="dp  form-control" id="ess">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </div><!-- 
+										<input type="text" id="datepicker"> -->
+                </div>
+                <hr />
+
+            </div>
+        </div>
+    </div>
+</div>

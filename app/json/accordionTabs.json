@@ -1,0 +1,67 @@
+ [
+    {
+      "title": "Email Field",
+      "content": "The email input field can take text input and validate that the input is a valid email address. You specify that an input field is an email field using the type=\"email\" attribute.",
+      "open": false
+    },
+    {
+      "title": "URL Field",
+      "content": "The URL field can take text input and validate that the input is a valid URL. You specify that an input field is a URL field using the type\"url\" attribute.",
+      "open": false
+    },
+    {
+      "title": "Number Field",
+      "content": "The number field can take text input and validate that the input is a valid number. The browser may assist the user by showing a numeric keyboard, e.g. on a mobile phone.You specify that an input field is a number field using the type=\"number\" attribute",
+      "open": false
+    },
+    {
+      "title": "Range Fields",
+      "content": "Dynamic Group Body - 4",
+      "open": false
+    },
+    {
+      "title": "Tel Fields",
+      "content": "Dynamic Group Body - 5",
+      "open": false
+    },
+    {
+      "title": "Search Fields",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    },
+    {
+      "title": "Date Field",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    },
+    {
+      "title": "Time Field",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    },
+    {
+      "title": "Datetime Field",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    },
+    {
+      "title": "Month Field",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    },
+    {
+      "title": "Week Field",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    },
+    {
+      "title": "Color Field",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    },
+    {
+      "title": "Combo Box Fields",
+      "content": "Dynamic Group Body - 6",
+      "open": false
+    }
+  ]
