@@ -1,4 +1,4 @@
-<div class="jumbotron" ng-controller="MainCtrl" ng-init="showModal = false">
+<div class="jumbotron" ng-controller="MainCtrl">
     <h2>Olive</h2>
     <p class="lead">
         <img src="images/yeoman.png" id="yeoman" alt="I'm Yeoman">
@@ -9,7 +9,7 @@
         </button>
     </p>
     <br>
-    <button ng-click="toggleModal()" class="btn btn-default">Open modal<span class="glyphicon glyphicon-ok"></span>
+    <button ng-click="toggleModal('Success')" class="btn btn-default">Open modal<span class="glyphicon glyphicon-ok"></span>
     </button>
     <span class="pull-left">
             <button type="button" class="btn btn-default btn-lg" ng-click="openAside('left', true)">
@@ -19,7 +19,10 @@
         Up <span class="glyphicon glyphicon-arrow-down"></span>
     </button>
     </span>
-    <modal title="Login form" visible="showModal">
+    <my-modal visible="showModal">
+        Any additional data / buttons
+    </my-modal>
+    <!-- <modal title="Login form" visible="showModal">
         <div>
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -37,7 +40,7 @@
                 </div>
             </div>
         </div>
-    </modal>
+    </modal> -->
 </div>
 <!-- ######################################################################### -->
 <div class="row marketing">

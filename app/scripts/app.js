@@ -22,7 +22,6 @@ angular
     'ui.bootstrap',
     'todoList',
     'main',
-    'mymodal',
     'animations',
     'ngStorage',
     'about',
@@ -34,7 +33,8 @@ angular
     'carousel',
     'accordion',
     'angularjs',
-    'datepicker'
+    'datepicker',
+    'mymodal'
 
   ])
   .config(function ($routeProvider) {

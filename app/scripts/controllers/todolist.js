@@ -7,36 +7,33 @@
  * # TodolistCtrl
  * Controller of the oliwebap
 */
-	
-	/**
+
+    /**
  * Déclaration du module todoList
  */
-var todoList = angular.module('todoList',[ 'ngStorage']);
+var todoList = angular.module('todoList',[ 'ngStorage' ]);
 
+todoList.controller('TodoCtrl', function($scope, $localStorage, $sessionStorage){
 
-/**
- * Contrôleur de l'application "Todo List" décrite dans le chapitre "La logique d'AngularJS".
- */
-/* todoList.controller('TodoCtrl', ['$scope',  */
-   	todoList.controller('TodoCtrl', function($scope, $localStorage, $sessionStorage){
-		
-			$scope.$storage = $localStorage.$default({
+            $scope.$storage = $localStorage.$default({
          /*  x: 42,
           name: "olivier",
-					company: "",
-					completed: false, */
-					todos:[
-						{
-								title: "une tache1",
-								completed: false
-						},
-						{
-								title: "une tache222222222",
-								completed: true
-						}
-					]
+                    company: "",
+                    completed: false, */
+                    todos:[
+                        {
+                                title: "une tache1",
+                                completed: false
+                        },
+                        {
+                                title: "une tache222222222",
+                                completed: true
+                        }
+                    ]
         });
-		
+
+        /*$scope.jsontodos = myJsonService.getJSON();*/
+
         // Ajouter un todo
         $scope.addTodo = function () {
             // .trim() permet de supprimer les espaces inutiles
@@ -54,10 +51,10 @@ var todoList = angular.module('todoList',[ 'ngStorage']);
 
             // Réinitialisation de la variable newTodo
             $scope.newTodo = '';
-				};	
-		
-				/* var res = $http.post('/savecompany_json', dataObj); */
-       
+                };
+
+                /* var res = $http.post('/savecompany_json', dataObj); */
+
 
         // Enlever un todo
         $scope.removeTodo = function (todo) {

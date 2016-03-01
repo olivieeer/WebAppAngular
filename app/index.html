@@ -18,347 +18,364 @@
 <!-- endbower -->
 <!-- endbuild -->
 <!-- build:css(.tmp) styles/main.css -->
-<link rel="stylesheet" href="styles/main1.css">
 <link rel="stylesheet" href="styles/main2.css">
 <link rel="stylesheet" href="styles/embed-min.css">
     <link rel="stylesheet" href="styles/datepicker.css">
 <style type="text/css">
 body {
-	background-color: #DDD;
+    background-color: #DDD;
     overflow-y: scroll;
 }
-.ui-datepicker 
-{ 
-    font-size: 16px; 
+.ui-datepicker
+{
+    font-size: 16px;
     width: 200px;
     top: 29px; left: 283px; z-index: 10; display: block;
 }
 .date-form { margin: 10px; }
 label.control-label span { cursor: pointer; }
 [class*="col"] {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 img {
-	width: 100%;
+    width: 100%;
 }
 
 #yeoman {
-	width: 103px;
-	height: 89px;
+    width: 103px;
+    height: 89px;
 }
 
 #task {
-	width: 128px;
-	height: 128px;
+    width: 128px;
+    height: 128px;
 }
 
 .block {
-	display: block;
+    display: block;
+}
+.modal-body, .modal-header, .modal-footer {
+    background-color: #DDD;
+}
+.modal-content {
+    width: 70%;
+    border: 1px solid red;
 }
 
+.modal-dialog {
+    border: 3px solid #000000; !important
+    width: 900px; !important
+    -webkit-border-radius: 10px 10px 10px 10px; !important
+    -moz-border-radius: 10px 10px 10px 10px; !important
+    border-radius: 10px 10px 10px 10px; !important
+}
+    .autoModal.modal .modal-body{
+        max-height: 100%;
+        max-width: 100%;
+    }
 .well {
-	background-color: #CCC;
-	padding: 20px;
+    background-color: #CCC;
+    padding: 20px;
 }
 
 [class*="col-"], footer {
-	/*background-color: #E2BC74; */
-	border: 2px solid black;
-	border-radius: 6px;
-	line-height: 40px;
+    /*background-color: #E2BC74; */
+    border: 2px solid black;
+    border-radius: 6px;
+    line-height: 40px;
 }
 
 .full button span {
-	background-color: limegreen;
-	border-radius: 32px;
-	color: black;
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
 }
 
 .partially button span {
-	background-color: green;
-	border-radius: 32px;
-	color: black;
+    background-color: green;
+    border-radius: 32px;
+    color: black;
 }
 
 #eventForm .form-control-feedback {
-	top: 0;
-	right: -15px;
+    top: 0;
+    right: -15px;
 }
 
 .vcenter {
-	display: inline-block;
-	vertical-align: top;
-	float: none;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
 }
 
 .carousel {
-	margin-bottom: 20px;
-	margin-top: 0px;
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	height: auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
 }
 
 .carousel-inner {
-	border: 5px solid white;
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	height: auto;
+    border: 5px solid white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
 }
 
 .carousel-inner>.item {
-	position: relative;
-	-webkit-transition: .6s ease-in-out left;
-	-o-transition: .6s ease-in-out left;
-	transition: .6s ease-in-out left;
+    position: relative;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left;
 }
 
 .carousel-inner>.active, .carousel-inner>.next, .carousel-inner>.prev {
-	display: block;
+    display: block;
 }
 
 .carousel-inner>.active {
-	left: 0;
+    left: 0;
 }
 
 .carousel-inner>.next, .carousel-inner>.prev {
-	position: absolute;
-	top: 0;
-	width: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .carousel-inner>.next {
-	left: 100%;
+    left: 100%;
 }
 
 .carousel-inner>.prev {
-	left: -100%;
+    left: -100%;
 }
 
 .carousel-inner>.next.left, .carousel-inner>.prev.right {
-	left: 0;
+    left: 0;
 }
 
 .carousel-inner>.active.left {
-	left: -100%;
+    left: -100%;
 }
 
 .carousel-inner>.active.right {
-	left: 100%;
+    left: 100%;
 }
 
 .well {
-	background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 }
 
 /**********************************************************/
 @media ( min-width : 992px) {
-	.carousel-caption h1 {
-		margin-bottom: 20px;
-		font-size: 40px;
-		line-height: 1.4;
-	}
-	ul.nav.navbar-nav li a {
-		text-align: left;
-		display: inline-block;
-	}
+    .carousel-caption h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        line-height: 1.4;
+    }
+    ul.nav.navbar-nav li a {
+        text-align: left;
+        display: inline-block;
+    }
 }
 
 /**********************************************************/
 @media ( max-width : 992px) {
-	ul.nav.navbar-nav li a {
-		text-align: left;
-		display: block;
-	}
-	ul.nav.navbar-nav li a:hover {
-		background-color: #696969;
-	}
-	.carousel-caption h1 {
-		margin-bottom: 20px;
-		font-size: 21px;
-		line-height: 1.4;
-	}
-	a h4 {
-		width: 100%;
-		text-align: center;
-	}
+    ul.nav.navbar-nav li a {
+        text-align: left;
+        display: block;
+    }
+    ul.nav.navbar-nav li a:hover {
+        background-color: #696969;
+    }
+    .carousel-caption h1 {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    a h4 {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 accordion-group.ng-binding.ng-scope {
-	display: block;
+    display: block;
 }
 
 label, input {
-	display: inline-block;
+    display: inline-block;
 }
 
 input.text {
-	margin-bottom: 12px;
-	width: 95%;
-	padding: .4em;
+    margin-bottom: 12px;
+    width: 95%;
+    padding: .4em;
 }
 
 fieldset {
-	padding: 0;
-	border: 0;
-	margin-top: 25px;
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
 }
 
 h1 {
-	font-size: 1.2em;
-	margin: .6em 0;
+    font-size: 1.2em;
+    margin: .6em 0;
 }
 
 div#users-contain {
-	width: 350px;
-	margin: 20px 0;
+    width: 350px;
+    margin: 20px 0;
 }
 
 div#users-contain table {
-	margin: 1em 0;
-	border-collapse: collapse;
-	width: 50%;
+    margin: 1em 0;
+    border-collapse: collapse;
+    width: 50%;
 }
 
 div#users-contain table td, div#users-contain table th {
-	border: 1px solid #eee;
-	padding: .6em 10px;
-	text-align: left;
+    border: 1px solid #eee;
+    padding: .6em 10px;
+    text-align: left;
 }
 
 .ui-dialog .ui-state-error {
-	padding: .3em;
+    padding: .3em;
 }
 
 .validateTips {
-	border: 1px solid transparent;
-	padding: 0.3em;
+    border: 1px solid transparent;
+    padding: 0.3em;
 }
 
 .accordion__container {
-	background: grey;
-	border: 1px solid #ccc;
-	padding: 20px;
-	height: 800px;
-	overflow-y: scroll;
+    background: grey;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 800px;
+    overflow-y: scroll;
 }
 
 }
 .accordion__tab {
-	background: #6082b6;
-	color: #fff;
-	border-bottom: 1px solid black;
+    background: #6082b6;
+    color: #fff;
+    border-bottom: 1px solid black;
 }
 
 .accordion__tab-title {
-	background: #8d8c88;
-	padding: 5px;
-	cursor: pointer;
-	text-align: center;
-	border: 1px solid grey;
-	border-radius: 10px;
+    background: #8d8c88;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
 .accordion__tab-content {
-	background: #acaba7;
-	padding: 20px;
-	border: 1px solid grey;
-	border-radius: 10px;
+    background: #acaba7;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
 .inline {
-	display: inline-block
+    display: inline-block
 }
 </style>
 </head>
 <body ng-app="app">
-	<!--[if lte IE 8]>
+    <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-	<!-- Add your site or application content here -->
-	<div class="header">
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#myNavbar">
-						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">WebSiteName</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#/main">Home</a></li>
-						<li><a ng-href="#/about">About</a></li>
-						<li><a href="#/suggestions">Suggestions</a></li>
-						<li class="dropdown"><a class="dropdown-toggle"
-							data-toggle="dropdown" href="#">Javascript <span
-								class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a ng-href="#/javascript">Javascript</a></li>
-								<li><a ng-href="#/nodejs">Node.js</a></li>
-							</ul></li>
-						<li class="dropdown"><a class="dropdown-toggle"
-							data-toggle="dropdown" href="#">AngularJs <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a ng-href="#/angularjs">AngularJs</a></li>
-								<li><a ng-href="#/todolist">Todolist</a></li>
-								<li><a ng-href="#/carousel">Carousel</a></li>
-								<li><a ng-href="#/animations">Animations</a></li>
-								<li><a ng-href="#/accordion">accordion</a></li>
-								<li><a ng-href="#/craEcranB">Cra</a></li>
-							</ul></li>
-						<li class="dropdown"><a class="dropdown-toggle"
-							data-toggle="dropdown" href="#">Developpement <span
-								class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a ng-href="#/developpementweb">Developpement web</a></li>
-								<li><a ng-href="#/jquery">JQuery</a></li>
-								<li><a ng-href="#/html">Html5</a></li>
-								<li><a ng-href="#/css">CSS3</a></li>
-							</ul></li>
-						<li class="dropdown"><a class="dropdown-toggle"
-							data-toggle="dropdown" href="#">Bootstrap <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a ng-href="#/bootstrap">Bootstrap</a></li>
-								<li><a ng-href="#/bootstrapexemple">bootstrap Exemple</a></li>
-							</ul></li>
-						<li><a href="#/contact">Contact</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#/register"><span
-								class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-						<li><a href="#/login"><span
-								class="glyphicon glyphicon-log-in"></span> Login</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+    <!-- Add your site or application content here -->
+    <div class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+                            class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/main">Home</a></li>
+                        <li><a ng-href="#/about">About</a></li>
+                        <li><a href="#/suggestions">Suggestions</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle"
+                            data-toggle="dropdown" href="#">Javascript <span
+                                class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a ng-href="#/javascript">Javascript</a></li>
+                                <li><a ng-href="#/nodejs">Node.js</a></li>
+                            </ul></li>
+                        <li class="dropdown"><a class="dropdown-toggle"
+                            data-toggle="dropdown" href="#">AngularJs <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a ng-href="#/angularjs">AngularJs</a></li>
+                                <li><a ng-href="#/todolist">Todolist</a></li>
+                                <li><a ng-href="#/carousel">Carousel</a></li>
+                                <li><a ng-href="#/animations">Animations</a></li>
+                                <li><a ng-href="#/accordion">accordion</a></li>
+                                <li><a ng-href="#/craEcranB">Cra</a></li>
+                            </ul></li>
+                        <li class="dropdown"><a class="dropdown-toggle"
+                            data-toggle="dropdown" href="#">Developpement <span
+                                class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a ng-href="#/developpementweb">Developpement web</a></li>
+                                <li><a ng-href="#/jquery">JQuery</a></li>
+                                <li><a ng-href="#/html">Html5</a></li>
+                                <li><a ng-href="#/css">CSS3</a></li>
+                            </ul></li>
+                        <li class="dropdown"><a class="dropdown-toggle"
+                            data-toggle="dropdown" href="#">Bootstrap <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a ng-href="#/bootstrap">Bootstrap</a></li>
+                                <li><a ng-href="#/bootstrapexemple">bootstrap Exemple</a></li>
+                            </ul></li>
+                        <li><a href="#/contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#/register"><span
+                                class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#/login"><span
+                                class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-	</div>
-	<div class="container-fluid">
-		<div ng-view=""></div>
-	</div>
+    </div>
+    <div class="container-fluid">
+        <div ng-view=""></div>
+    </div>
 
-	<div class="footer">
-		<div class="container">
-			<p>
-				<span class="glyphicon glyphicon-heart"></span> from the Yeoman team
-			</p>
-		</div>
-	</div>
+    <div class="footer">
+        <div class="container">
+            <p>
+                <span class="glyphicon glyphicon-heart"></span> from the Yeoman team
+            </p>
+        </div>
+    </div>
 
 
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-	<!--   <script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!--   <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
@@ -368,73 +385,75 @@ div#users-contain table td, div#users-contain table th {
        ga('send', 'pageview');
     </script> -->
 
-	<!-- build:js(.) scripts/vendor.js -->
-	<!-- bower:js -->
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="bower_components/angular-animate/angular-animate.js"></script>
-	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-	<script src="bower_components/angular-resource/angular-resource.js"></script>
-	<script src="bower_components/angular-route/angular-route.js"></script>
-	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-	<script src="bower_components/angular-touch/angular-touch.js"></script>
-	<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
-	<script src="bower_components/ngstorage/ngStorage.js"></script>
-	<script src="bower_components/fetch/fetch.js"></script>
-	<script src="bower_components/es6-promise/promise.js"></script>
-	<script src="bower_components/ng-auth/dist/ng-auth.js"></script>
-	<script src="bower_components/ng-cookies/dist/ng-cookies.min.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-	<script src="bower_components/ng-scrollbar/dist/ng-scrollbar.js"></script>
-	<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-	<script src="bower_components/angular-ui-date/src/date.js"></script>
-	<script src="bower_components/moment/moment.js"></script>
-	<script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
-	<script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-	<script src="bower_components/angular-aside/dist/js/angular-aside.js"></script>
-	<script src="bower_components/angular-strap/dist/angular-strap.js"></script>
-	<script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
-	<!-- endbower -->
-	<!-- endbuild -->
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/fetch/fetch.js"></script>
+    <script src="bower_components/es6-promise/promise.js"></script>
+    <script src="bower_components/ng-auth/dist/ng-auth.js"></script>
+    <script src="bower_components/ng-cookies/dist/ng-cookies.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/ng-scrollbar/dist/ng-scrollbar.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular-ui-date/src/date.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
+    <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="bower_components/angular-aside/dist/js/angular-aside.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+    <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.js"></script>
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 
-	<!-- build:js({.tmp,app}) scripts/scripts.js -->
-	<script src="scripts/app.js"></script>
-	<script src="scripts/controllers/main.js"></script>
-	<script src="scripts/controllers/about.js"></script>
-	<script src="scripts/controllers/contact.js"></script>
-	<script src="scripts/controllers/developpementweb.js"></script>
-	<script src="scripts/controllers/java.js"></script>
-	<script src="scripts/controllers/html.js"></script>
-	<script src="scripts/controllers/css.js"></script>
-	<script src="scripts/controllers/jquery.js"></script>
-	<script src="scripts/controllers/bootstrap.js"></script>
-	<script src="scripts/controllers/bootstrapexemple.js"></script>
-	<script src="scripts/controllers/todolist.js"></script>
-	<script src="scripts/controllers/carousel.js"></script>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/developpementweb.js"></script>
+    <script src="scripts/controllers/java.js"></script>
+    <script src="scripts/controllers/html.js"></script>
+    <script src="scripts/controllers/css.js"></script>
+    <script src="scripts/controllers/jquery.js"></script>
+    <script src="scripts/controllers/bootstrap.js"></script>
+    <script src="scripts/controllers/bootstrapexemple.js"></script>
+    <script src="scripts/controllers/todolist.js"></script>
+    <script src="scripts/controllers/carousel.js"></script>
     <script src="scripts/controllers/angularjs.js"></script>
-	<!-- 
-        <script src="scripts/services/jsonservice.js"></script> -->
-	<script src="scripts/directives/modal.js"></script>
-	<script src="scripts/controllers/animations.js"></script>
-	<script src="scripts/controllers/storage.js"></script>
-	<script src="scripts/directives/filemodel.js"></script>
-	<script src="scripts/services/fileupload.js"></script>
-	<script src="scripts/controllers/filecontrol.js"></script>
-
-	<script src="scripts/controllers/login.js"></script>
-	<script src="scripts/controllers/register.js"></script>
-	<script src="scripts/services/authservices.js"></script>
-	<script src="scripts/services/authappservices.js"></script>
-	<script src="scripts/controllers/accordion.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/controllers/register.js"></script>
+    <script src="scripts/controllers/animations.js"></script>
+    <script src="scripts/controllers/storage.js"></script>
+    <script src="scripts/controllers/filecontrol.js"></script>
+    <script src="scripts/controllers/accordion.js"></script>
     <script src="scripts/controllers/datepicker.js"></script>
-<script src="scripts/directives/tooltip.js"></script>
-	<!-- endbuild -->
+    <!--
+        <script src="scripts/services/jsonservice.js"></script> -->
+    <script src="scripts/directives/modal.js"></script>
+    <script src="scripts/directives/filemodel.js"></script>
+    <script src="scripts/directives/tooltip.js"></script>
+    <script src="scripts/services/fileupload.js"></script>
+    <script src="scripts/services/authservices.js"></script>
+    <script src="scripts/services/authappservices.js"></script>
+    <!--<script src="scripts/services/jsonservice.js"></script>-->
+
+
+    <!-- endbuild -->
 
 </body>
 </html>

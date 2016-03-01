@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: jsonservice', function () {
+describe('Service: jsonService', function () {
 
   // load the service's module
   beforeEach(module('oliwebappApp'));
 
   // instantiate service
-  var jsonservice;
-  beforeEach(inject(function (_jsonservice_) {
-    jsonservice = _jsonservice_;
+  var jsonService;
+  beforeEach(inject(function (_jsonService_) {
+    jsonService = _jsonService_;
   }));
 
   it('should do something', function () {
-    expect(!!jsonservice).toBe(true);
+    expect(!!jsonService).toBe(true);
   });
 
 });

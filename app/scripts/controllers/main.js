@@ -8,7 +8,7 @@
  * Controller of the oliwebappApp
  */
 
- 
+
   /**
  * Déclaration du module todoList
  */
@@ -22,8 +22,10 @@ main.controller('MainCtrl', ['$scope',
     function ($scope) {
 
         $scope.showModal = false;
+        /*$scope.title = "Ma Super Modal";*/
         $scope.toggleModal = function(){
-					$scope.showModal = !$scope.showModal;
-				};
+            $scope.showModal = !$scope.showModal;
+            $scope.title = "Ma Super Modal";
+        };
     }
 ]);

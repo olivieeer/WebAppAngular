@@ -2,18 +2,17 @@
 
 /**
  * @ngdoc service
- * @name oliwebappApp.jsonservice
+ * @name oliwebappApp.jsonService
  * @description
- * # jsonservice
+ * # jsonService
  * Service in the oliwebappApp.
  */
-var myJsonService = angular.module('myJsonService');
-
-  myJsonService.service('jsonservice', function($http){         
-    return {
-        getJSON: function() {
-            return $http.get('test.json');
-        }
-    };
-});
+var myJsonService = angular.module('myJsonService')
+    myJsonService.service('jsonService', function ($http) {
+        return {
+            getJSON: function() {
+                return $http.get('test.json');
+            }
+        };
+  });
 

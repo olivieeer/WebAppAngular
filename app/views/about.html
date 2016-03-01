@@ -1,39 +1,37 @@
-<div ng-controller="AboutCtrl">
-	
-	<div class="row col-lg-12">
-    <button ng-click="$storage.x = $storage.x + 1">{{$storage.x}}</button> + <button ng-click="$storage.y = $storage.y + 1">{{$storage.y}}</button> = {{$storage.x + $storage.y}}
-	</div>	
-	
-	<form class="well">
-	<div class="row col-lg-12">
-		<div>
-				<div class="form-group col-lg-12">
-					<label for="name" class="control-label">Nom: </label>
-					<input type="text" id="name"  ng-model="$storage.name" value="{{$storage.name}}" style="width:2O%"/>
-				</div>
-		</div>
-	</div>
-	<div class="row col-lg-12">
-			<div class="form-group">
-				<label for="company" class="control-label">Entreprise: </label>
-				<input type="text" id="company"  ng-model="$storage.company" value="{{$storage.company}}" style="width:2O0px"/>
-			</div>
-			<strong><span>{{$storage.name}}   --  {{$storage.company}}</span></strong>
-			<div class="form-group">
-				<input type="radio" id="completed" class="form-control" ng-model="$storage.completed"  ng-value="{{$storage.completed}}"  style="width:2O0px"/>
-				<input type="submit" class="btn btn-primary"/>
-			</div>
-	</div>
-		</form>
-		</p>
-		
-	
+<div class="container" ng-controller="AboutCtrl">
+
+    <div class="row col-lg-12 text-center">
+        <button class="btn btn-primary col-md-3 col-lg-3" ng-click="$storage.x = $storage.x + 1">{{$storage.x}}</button> + <button ng-click="$storage.y = $storage.y + 1">{{$storage.y}}</button> = {{$storage.x + $storage.y}}
+    </div>
+
+    <form class="well">
+    <div class="row col-lg-12">
+        <!--<div class="form-group">-->
+            <label for="name" class="control-label col-sm-6 col-lg-3">Nom: </label>
+            <input type="text" id="name"  ng-model="$storage.name" value="{{$storage.name}}" class="form-control col-sm-6 col-lg-8"/> <!--style="width:10O%"/>
+        </div>-->
+    </div>
+    <div class="row col-lg-12">
+            <div class="form-group">
+                <label for="company" class="control-label">Entreprise: </label>
+                <input type="text" id="company"  ng-model="$storage.company" value="{{$storage.company}}" style="width:2O0px" class="form-control"/>
+            </div>
+            <strong><span>{{$storage.name}}   --  {{$storage.company}}</span></strong>
+            <div class="form-group">
+                <input type="radio" id="completed" class="form-control" ng-model="$storage.completed"  ng-value="{{$storage.completed}}"  style="width:2O0px"/>
+                <input type="submit" class="btn btn-primary"/>
+            </div>
+    </div>
+        </form>
+        </p>
+
+
 </div>
 <div ng-controller = "FilecontrolCtrl">
-	<div class="row col-lg-12">
+    <div class="row col-lg-12">
     <input type = "file" file-model = "myFile"/>
-		<button ng-click = "uploadFile()">upload me</button>
-	</div>	
-		
-  
+        <button ng-click = "uploadFile()">upload me</button>
+    </div>
+
+
 </div>

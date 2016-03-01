@@ -6,5 +6,9 @@
     {
        title:"Exemple de tâche2", 
         completed: true    
+    },
+		{
+       title:"Exemple de tâche3", 
+        completed: false    
     }
 ]
